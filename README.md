@@ -3,9 +3,9 @@
 Esse app foi utilizado algumas dependências:
 
 "axios": "^0.27.2"
-
+<br>
 "node-sass": "^7.0.1"
-
+<br>
 "react-router-dom": "^6.3.0"
 
 A API foi [https://pokeapi.co/](PokéAPI)
