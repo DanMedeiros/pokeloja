@@ -1,0 +1,9 @@
+@import "../../assest/assest.scss";
+
+.pk-shelf {
+    &-card {
+        &__name {
+            font-family: Pokemon;
+        }
+    }
+}

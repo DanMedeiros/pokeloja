@@ -1,10 +1,10 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.pk-header-fullBanner__img img {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
