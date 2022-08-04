@@ -1,6 +1,6 @@
 # Seja bem vindo
 
-Esse app foi utilizado algumas dependênciasm:
+Esse app foi utilizado algumas dependências:
 
     "axios": "^0.27.2",
     "node-sass": "^7.0.1",
