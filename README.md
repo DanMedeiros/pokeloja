@@ -1,4 +1,4 @@
-# Seja bem vindo
+<h1 align="center"> PokeLoja </h1>
 
 Esse app foi utilizado algumas dependências:
 
