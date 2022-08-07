@@ -1,0 +1,358 @@
+.pk-shelf {
+    &-card {
+        &__photo {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: "";
+                width: 30rem;
+                height: 30rem;
+                border-radius: 50%;
+                position: absolute;
+                z-index: -1;
+            }
+
+            &.grass {
+                &::before {
+                    background: #D6EBDC;
+                }
+            }
+
+            &.fire {
+                &:before {
+                    background: #FFEBCA;
+                }
+            }
+
+            &.water {
+                &:before {
+                    background: #DFECF5;
+                }
+            }
+
+            &.bug {
+                &:before {
+                    background: rgba(131, 158, 56, 0.2);
+                }
+            }
+
+
+            &.normal {
+                &:before {
+                    background: rgba(141, 141, 141, 0.2);
+                }
+            }
+
+            &.electric {
+                &:before {
+                    background: rgba(207, 190, 93, 0.2);
+                }
+            }
+
+            &.poison {
+                &:before {
+                    background: rgba(172, 106, 202, 0.2);
+                }
+            }
+
+            &.fairy {
+                &:before {
+                    background: rgba(221, 138, 220, 0.2);
+                }
+            }
+
+            &.ground {
+                &:before {
+                    background: rgba(203, 119, 74, 0.2);
+                }
+            }
+
+            &.fighting {
+                &:before {
+                    background: rgba(196, 77, 97, 0.2);
+                }
+            }
+
+            &.psychic {
+                &:before {
+                    background: rgba(235, 140, 133, 0.2);
+                }
+            }
+
+            &.rock {
+                &:before {
+                    background: rgba(134, 203, 190, 0.2);
+                }
+            }
+
+            &.ghost {
+                &:before {
+                    background: rgba(97, 110, 183, 0.2);
+                }
+            }
+
+            &.ice {
+                &:before {
+                    background: rgba(124, 197, 182, 0.2);
+                }
+            }
+
+            &.dragon {
+                &:before {
+                    background: rgba(70, 105, 153, 0.2);
+                }
+            }
+
+            &.dark {
+                &:before {
+                    background: rgba(61, 60, 63, 0.2);
+                }
+
+            }
+
+            &.steel {
+                &:before {
+                    background: rgba(101, 148, 161, 0.2);
+                }
+            }
+
+            &.flying {
+                &:before {
+                    background: rgba(158, 180, 227, 0.2);
+                }
+            }
+        }
+
+        &__info {
+            &--name {
+                margin-bottom: 20px;
+
+                h1 {
+                    text-transform: capitalize;
+                    font-family: Pokemon;
+                    position: relative;
+                }
+
+                &__fire {
+                    background: #FFEBCA;
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__grass {
+                    background: #D6EBDC;
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__water {
+                    background: #DFECF5;
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__bug {
+                    background: rgba(131, 158, 56, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__normal {
+                    background: rgba(141, 141, 141, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__electric {
+                    background: rgba(207, 190, 93, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__poison {
+                    background: rgba(172, 106, 202, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__fairy {
+                    background: rgba(221, 138, 220, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__ground {
+                    background: rgba(203, 119, 74, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__fighting {
+                    background: rgba(196, 77, 97, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__psychic {
+                    background: rgba(235, 140, 133, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__rock {
+                    background: rgba(134, 203, 190, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__ghost {
+                    background: rgba(97, 110, 183, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__ice {
+                    background: rgba(124, 197, 182, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__dragon {
+                    background: rgba(70, 105, 153, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__dark {
+                    background: rgba(61, 60, 63, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__steel {
+                    background: rgba(101, 148, 161, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+
+                &__flying {
+                    background: rgba(158, 180, 227, 0.2);
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #E96303;
+                    margin: 10px 0;
+                }
+            }
+
+            &--height {
+                span {
+                    display: block;
+                    font-size: 20px;
+                }
+
+                strong {
+                    font-size: 20px;
+                    line-height: 15px;
+                }
+            }
+
+            &--weight {
+                span {
+                    display: block;
+                    font-size: 20px;
+                }
+
+                strong {
+                    font-size: 20px;
+                    line-height: 15px;
+                }
+            }
+
+            &--abilities {
+                span {
+                    display: block;
+                    font-size: 20px;
+                }
+
+                strong {
+                    font-size: 17px;
+                    line-height: 15px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

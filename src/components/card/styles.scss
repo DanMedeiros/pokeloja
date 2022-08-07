@@ -1,9 +1,230 @@
 @import "../../assest/assest.scss";
 
-.pk-shelf {
-    &-card {
-        &__name {
-            font-family: Pokemon;
+.pk-card {
+    cursor: pointer;
+    margin-bottom: 20px;
+    &--btn {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px !important;
+        position: relative;
+        height: 40px;
+        &__prev {
+            left: 0;
+            position: absolute;
+            margin-left: 12px;
+        }
+
+        &__next {
+            right: 0;
+            position: absolute;
+            margin-right: 12px;
+        }
+    }
+    
+    &_content {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 10px 51px -5px rgba(0,0,0, .1);
+        margin-bottom: 20px;
+        &:hover {
+            box-shadow: 0px 10px 51px -5px rgba(0,0,0, .2);
+        }
+    }
+
+    &__img {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 55%;
+            z-index: 10;
+        }
+
+        &::before {
+            content: "";
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            position: absolute;
+            // z-index: -1;
+        }
+    }
+
+    &__info{
+        width: 100%;
+
+        &--id {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: #2F3133;
+            text-transform: capitalize;
+            margin: 0;
+        }
+        &--name {
+            h1 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 150%;
+                color: #2F3133;
+                text-transform: capitalize;
+                margin: 0;
+                line-height: 1px;
+            }
+        }
+    }
+    
+    &.grass {
+        .pk-card__img {
+            &:before{
+                background: #D6EBDC;
+            }
+        }
+    }
+
+    &.fire {
+        .pk-card__img {
+            &:before{
+                background: #FFEBCA;
+            }
+        }
+    }
+
+    &.water {
+        .pk-card__img {
+            &:before{
+                background: #DFECF5;
+            }
+        }
+    }
+
+    &.bug {
+        .pk-card__img {
+            &:before{
+                background: rgba(131, 158, 56, 0.2);
+            }
+        }
+    }
+
+    
+    &.normal {
+        .pk-card__img {
+            &:before{
+                background: rgba(141, 141, 141, 0.2);
+            }
+        }
+    }
+
+    &.electric {
+        .pk-card__img {
+            &:before{
+                background: rgba(207, 190, 93, 0.2);
+            }
+        }
+    }
+
+    &.poison {
+        .pk-card__img {
+            &:before{
+                background: rgba(172, 106, 202, 0.2);
+            }
+        }
+    }
+
+    &.fairy {
+        .pk-card__img {
+            &:before{
+                background: rgba(221, 138, 220, 0.2);
+            }
+        }
+    }
+
+    &.ground {
+        .pk-card__img {
+            &:before{
+                background: rgba(203, 119, 74, 0.2);
+            }
+        }
+    }
+
+    &.fighting {
+        .pk-card__img {
+            &:before{
+                background: rgba(196, 77, 97, 0.2);
+            }
+        }
+    }
+
+    &.psychic {
+        .pk-card__img {
+            &:before{
+                background: rgba(235, 140, 133, 0.2);
+            }
+        }
+    }
+
+    &.rock {
+        .pk-card__img {
+            &:before{
+                background: rgba(134, 203, 190, 0.2);
+            }
+        }
+    }
+
+    &.ghost{
+        .pk-card__img {
+            &:before{
+                background: rgba(97, 110, 183, 0.2);
+            }
+        }
+    }
+
+    &.ice{
+        .pk-card__img {
+            &:before{
+                background: rgba(124, 197, 182, 0.2);
+            }
+        }
+    }
+
+    &.dragon{
+        .pk-card__img {
+            &:before{
+                background: rgba(70, 105, 153, 0.2);
+            }
+        }
+    }
+
+    &.dark {
+        .pk-card__img {
+            &:before{
+                background: rgba(61, 60, 63, 0.2);
+            }
+        }
+    }
+
+    &.steel {
+        .pk-card__img {
+            &:before{
+                background: rgba(101, 148, 161, 0.2);
+            }
+        }
+    }
+
+    &.flying {
+        .pk-card__img {
+            &:before{
+                background: rgba(158, 180, 227, 0.2);
+            }
         }
     }
 }
