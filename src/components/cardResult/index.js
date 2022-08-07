@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import pokemonInd from "../../services/axios/pokemonInd";
-// import Grafico from "../grafico";
 import { Container, Row, Col } from 'react-bootstrap';
 import "./styles.scss";
 import {

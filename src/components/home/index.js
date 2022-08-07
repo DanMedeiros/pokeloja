@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { allPokemon, getPokemon } from '../../services/axios/apiPokemon';
 import Card from '../card';
