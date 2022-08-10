@@ -31,6 +31,8 @@ function CardResul() {
     useEffect(() => {
         pokemonInd.get(`${id.toLowerCase()}`).then(({ data }) => {
             setinputList(data)
+        }).catch(() => {
+            window.location.href = "404"
         })
     }, []);
 
@@ -72,10 +74,6 @@ function CardResul() {
           },
         ],
     };
-
-    if(!inputList.id){
-        window.location.href = "404";
-    }
       
     return (
         <Container className="pk-shelf">
